@@ -38,6 +38,8 @@ alias bashr='. ~/.bashrc'
 alias glpw='gulp watch'
 alias glpb='gulp build'
 alias glpr='gulp release'
+alias glpp='gulp production'
+alias glp='gulp'
 
 # ----------------------
 # Git Aliases
@@ -58,6 +60,7 @@ alias gcf='g commit --fixup'
 alias gco='g checkout'
 alias gcob='g checkout -b'
 alias gcom='g checkout master'
+alias gcos='g checkout staging'
 alias gcod='g checkout develop'
 alias gd='g diff'
 alias gdh='g diff HEAD'
@@ -80,6 +83,11 @@ alias gstd='g stash drop'
 alias gstl='g stash list'
 alias gstp='g stash pop'
 alias gsts='g stash save'
+alias gr='g restore'
+alias grs='gr --staged'
+alias gra='gr .'
+alias grsa='grs .'
+alias clearnm='rm -rf node_modules/'
 
 # ----------------------
 # Git Functions
