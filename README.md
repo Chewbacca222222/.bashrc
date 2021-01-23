@@ -27,6 +27,7 @@ And then either restart your machine or run:
 | `clearnm` | Deletes the node_modules folder |
 
 #### Functions
+| Shortcut | Explanation |
 | `rsa` | Add a new rsa key, for example a work account |
 
 ### Gulp shortcuts
