@@ -29,17 +29,29 @@ fi
 
 alias explr='start .'
 alias tree='find . -print | sed -e "s;[^/]*/;|____;g;s;____|; |;g"'
-alias bashr='. ~/.bashrc'
+alias bashrc='. ~/.bashrc'
+alias clearnm='rm -rf node_modules/'
+
+# ----------------------
+# Windows Functions
+# ----------------------
+
+function rsa() {
+    read -p "Enter rsa: " -r
+    ssh-add ~/.ssh/$REPLY
+}
 
 # ----------------------
 # Gulp Aliases
 # ----------------------
 
+alias glp='gulp'
+
 alias glpw='gulp watch'
 alias glpb='gulp build'
 alias glpr='gulp release'
 alias glpp='gulp production'
-alias glp='gulp'
+
 
 # ----------------------
 # Git Aliases
@@ -87,7 +99,6 @@ alias gr='g restore'
 alias grs='gr --staged'
 alias gra='gr .'
 alias grsa='grs .'
-alias clearnm='rm -rf node_modules/'
 
 # ----------------------
 # Git Functions
@@ -104,8 +115,7 @@ function gazy() {
     echo
     if [[ $REPLY =~ ^[Dd]$ ]]
     then
-	gdh
-
+        gdh
         read -p "Is this correct [Y/N]: " -n 1 -r
         echo
         if [[ $REPLY =~ ^[Yy]$ ]]
