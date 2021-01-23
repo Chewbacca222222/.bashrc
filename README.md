@@ -28,6 +28,7 @@ And then either restart your machine or run:
 
 #### Functions
 | Shortcut | Explanation |
+| ------ | ------ |
 | `rsa` | Add a new rsa key, for example a work account |
 
 ### Gulp shortcuts
